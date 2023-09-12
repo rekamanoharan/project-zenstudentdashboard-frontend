@@ -194,7 +194,13 @@ const MainLayout = ({ children }) => {
             style={{ marginLeft: "auto", alignItems: "center", gap: "20px" }}
           >
             <h4 style={{ fontSize: "20px" }}>Reka</h4>
-            <Avatar size={46} icon={<UserOutlined />} />
+            <Dropdown menu={{ items }}>
+              <a onClick={(e) => e.preventDefault()}>
+                <Space>
+                  <Avatar size={46} icon={<UserOutlined />} />
+                </Space>
+              </a>
+            </Dropdown>
           </Row>
         </Row>
         <Content
