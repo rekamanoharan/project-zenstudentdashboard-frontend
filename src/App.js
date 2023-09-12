@@ -9,6 +9,10 @@ import Register from "./Register";
 import "./styles.css";
 import TaskList from "./Tasks";
 import Dashboard from "./Dashboard";
+import Interview from "./Interview";
+import Application from "./Applications";
+import Webcode from "./Webcode";
+import Certificate from "./Certificate";
 
 export default function App() {
   return (
@@ -46,6 +50,38 @@ export default function App() {
               </ProtectedRoute>
             }
             path="/tasks"
+          />
+          <Route
+            element={
+              <MainLayout>
+                <Interview Tasks />
+              </MainLayout>
+            }
+            path="/interview"
+          />
+          <Route
+            element={
+              <MainLayout>
+                <Application />
+              </MainLayout>
+            }
+            path="/applications"
+          />
+          <Route
+            element={
+              <MainLayout>
+                <Webcode />
+              </MainLayout>
+            }
+            path="/webcode"
+          />
+          <Route
+            element={
+              <MainLayout>
+                <Certificate />
+              </MainLayout>
+            }
+            path="/certificate"
           />
         </Routes>
       </BrowserRouter>
