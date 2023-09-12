@@ -5,6 +5,7 @@ import {
   ProfileFilled,
   IdcardFilled,
   HomeFilled,
+  SolutionOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu, Button, Avatar, Row, theme } from "antd";
 import ZenLogo from "./ZenLogo";
