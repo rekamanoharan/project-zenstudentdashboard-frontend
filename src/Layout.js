@@ -193,7 +193,7 @@ const MainLayout = ({ children }) => {
           <Row
             style={{ marginLeft: "auto", alignItems: "center", gap: "20px" }}
           >
-            <h4 style={{ fontSize: "20px" }}>Reka</h4>
+            <h4 style={{ fontSize: "20px" }}>Student</h4>
             <Dropdown menu={{ items }}>
               <a onClick={(e) => e.preventDefault()}>
                 <Space>
